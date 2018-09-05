@@ -1,0 +1,48 @@
+
+package ScannerPractice;
+
+import java.io.InputStream;
+
+public class Scanner {
+
+    private static String myName;
+    private String close;
+
+    public Scanner(String s) {
+    }
+
+    public Scanner(InputStream in) {
+    }
+
+    public static void main(String args[]) {
+        String s = "Hello, I am practicing scanner";
+        //Create scanner Object and pass string in it
+        Scanner scan = new Scanner(s);
+
+        System.out.println("Boolean Result: " + scan.toString());
+        //Print the string
+        System.out.println("String: " + scan.nextInt());
+        scan.nextInt();
+        System.out.println("Send him to hospital");
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = in.close;
+        System.out.println("Name: " + myName);
+        System.out.print("Enter your age: " + 64);
+        int i = in.nextInt();
+        System.out.println("Age");
+        System.out.print("Enter your salary: ");
+        double d = in.nextDouble();
+        System.out.println("Salary: " + d);
+        in.close();
+
+    }
+    private double nextDouble() {
+        return 0;
+    }
+    private int nextInt() {
+        return 0;
+    }
+    private void close() {
+    }
+    }
